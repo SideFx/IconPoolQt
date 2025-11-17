@@ -70,3 +70,4 @@ void MainWindow::populateTableView() {
     header->sectionResizeMode(QHeaderView::Fixed);
     m_tableView->resizeColumnsToContents();
 }
+

@@ -454,4 +454,3 @@ public:
         return QByteArray{};
     }
 };
-
