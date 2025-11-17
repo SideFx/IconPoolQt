@@ -48,10 +48,10 @@ void MainWindow::populateTableView() {
         m_tableView->insertRow(row);
         m_tableView->setItem(row, 0, new QTableWidgetItem(icon));
         QPixmap n_pixmap, h_pixmap, p_pixmap, d_pixmap;
-        n_pixmap.loadFromData(IconPool::getSVgIconByNameAndState(icon, IconState::Normal));
-        h_pixmap.loadFromData(IconPool::getSVgIconByNameAndState(icon, IconState::Hover));
-        p_pixmap.loadFromData(IconPool::getSVgIconByNameAndState(icon, IconState::Pressed));
-        d_pixmap.loadFromData(IconPool::getSVgIconByNameAndState(icon, IconState::Disabled));
+        n_pixmap.loadFromData(IconPool::getSVGIconByNameAndState(icon, IconState::Normal));
+        h_pixmap.loadFromData(IconPool::getSVGIconByNameAndState(icon, IconState::Hover));
+        p_pixmap.loadFromData(IconPool::getSVGIconByNameAndState(icon, IconState::Pressed));
+        d_pixmap.loadFromData(IconPool::getSVGIconByNameAndState(icon, IconState::Disabled));
         QTableWidgetItem* n_item = new QTableWidgetItem();
         n_item->setIcon(n_pixmap);
         QTableWidgetItem* h_item = new QTableWidgetItem();

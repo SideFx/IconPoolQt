@@ -446,7 +446,7 @@ public:
         return s;
     }
 
-    static QByteArray getSVgIconByNameAndState(const QString& name, IconState state) {
+    static QByteArray getSVGIconByNameAndState(const QString& name, IconState state) {
         if (const auto& svg = getSVGIconByName(name); svg.has_value()) {
             std::string raw = makeSVGVariant(*svg, state);
             return QByteArray(raw.c_str(), raw.length());
